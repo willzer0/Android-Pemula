@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>U-Dine</title>
+	<style>
+		body {
+			background-color: ghostwhite;
+		}
+
+		.Container {
+			background-color: whitesmoke;
+			width: 400px;
+			height: 550px;
+			margin: auto;
+			margin-top: 5%;
+			border-radius: 5%;
+			font-family: sans-serif;
+			filter: blur(0.3px);
+		}
+
+		.font h1 {
+			font-size: 40px;
+			padding-left: 35px;
+			padding-top: 50px;
+			z-index: 1;
+			color: orange;
+		}
+
+		.font h3 {
+			font-size: 12px;
+			margin-top: -25px;
+			padding-left: 35px;
+		}
+
+		#input {
+			margin-top: 50px;
+			margin-left: 35px;
+			font-style: underline;
+			background-color: whitesmoke;
+			width: 290px;
+			height: 30px;
+			border-left: 10px;
+			border-top: 10px;
+			border-right: 10px;
+			transition: 0.7s;
+		}
+
+		#password {
+			border-left: 10px;
+			border-top: 10px;
+			border-right: 10px;
+			margin-left: 35px;
+			margin-top: 40px;
+			background-color: whitesmoke;
+			width: 290px;
+			height: 30px;
+			transition: 0.7s;
+		}
+
+		#input:hover {
+			transform: scale(1.05);
+		}
+
+		#password:hover {
+			transform: scale(1.05);
+		}
+
+		#check {
+			margin-left: 35px;
+			margin-top: 12px;
+			width: 20px;
+			height: 15px;
+			float: left;
+			background-color: whitesmoke;
+			transition: 0.7s;
+		}
+
+		#check:hover {
+			transform: scale(1.2);
+		}
+
+		#go {
+			font-size: 10px;
+			padding-top: 5px;
+		}
+
+		#button {
+			height: 60px;
+			width: 60px;
+			border-radius: 20%;
+			margin-left: 35px;
+			margin-top: 40px;
+			background-color: orange;
+			border: 0;
+		}
+
+		img {
+			position: absolute;
+			z-index: 1;
+			margin-top: 57px;
+			margin-left: 49px;
+			height: 24px;
+			;
+			width: 36px
+		}
+
+		#jo {
+			color: grey;
+			font-size: 8px;
+			margin-top: 110px;
+			margin-left: 150px;
+			filter: blur(0.4px);
+		}
+	</style>
+</head>
+
+<body>
+	<div id="like_button_container">
+		<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+		<script src="like_button.js"></script>
+	</div>
+	<div class="Container">
+		<div class="font">
+			<h1>Hello!</h1>
+			<h3>Login with your Registration number and Password</h3>
+		</div>
+		<div class="input">
+			<form>
+				<label><input type="input" name="Input" id="input" placeholder="Registration Number"></label>
+			</form>
+			<form>
+				<label><input type="password" name="Password" id="password" placeholder="Password"></label>
+			</form>
+			<form>
+				<label><input type="checkbox" name="check" id="check"></label>
+			</form>
+			<p id="go">Remember Me</p>
+			<img src="C:\Users\william\OneDrive\Dokumen\project\panah.png">
+			<form>
+				<label><input type="button" name="" id="button"></label>
+			</form>
+			<p id="jo">2022 U-DINE from Scientia Elit</p>
+		</div>
+	</div>
+</body>
+
+</html>
