@@ -1,0 +1,18 @@
+function checkObj(obj, checkProp) {
+  // Only change code below this line
+  if (obj.hasOwnProperty(checkProp)) {
+      // If it exists, return its value
+      return obj[checkProp];
+    } else {
+      // If it doesn't exist, return "Not Found"
+      return "Not Found";
+    }
+  }
+  // Only change code above this line
+const myObj = {
+  name: "John",
+  age: 30
+};
+
+const result1 = checkObj(myObj, "name"); // This will return "John"
+const result2 = checkObj(myObj, "occupation"); 
